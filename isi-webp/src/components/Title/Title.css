@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+.title {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 70px 0 30px;
+}
+
+.title h2 {
+  font-size: 32px;
+  color: #ff3300;
+  margin-top: 5px;
+  text-transform: none;
+  font-family: "Lora", serif;
+}
