@@ -12,8 +12,8 @@ const About = () => {
         </div>
 
         <div className="about-what-right">
-          <h2>What We Do</h2>
-          <h1>Strength that lasts</h1>
+          <h2>WHAT WE DO</h2>
+          <h1>strength that lasts</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
             accusantium natus sequi. Nostrum ratione error eum enim perferendis
@@ -33,8 +33,8 @@ const About = () => {
 
       <div className="about-why">
         <div className="about-why-left">
-          <h2>Why We Do It</h2>
-          <h1>Support you can trust</h1>
+          <h2>WHY WE DO IT</h2>
+          <h1>support you can trust</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             tempora molestiae alias ipsum quibusdam expedita totam id eum
@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
         <div className="about-why-right">
-          <img src={about2} alt="" className="about-what-img" />
+          <img src={about2} alt="" className="about-why-img" />
         </div>
       </div>
     </div>

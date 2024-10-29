@@ -27,10 +27,17 @@
   flex-basis: 56%;
 }
 
-.about-what-img,
+.about-what-img {
+  width: 650px;
+  height: 450px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
 .about-why-img {
   width: 650px;
   height: 450px;
+  margin-left: 15px;
   border-radius: 10px;
 }
 
