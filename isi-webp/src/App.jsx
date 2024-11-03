@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Top from "./components/Top/Top";
 import About from "./components/About/About";
 import Title from "./components/Title/Title";
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <div className="container">
         <Title subTitle="About Us" title="who we are" />
         <About />
+        <Title subTitle="Gallery" title="show me the ropes" />
+        <Gallery />
       </div>
     </div>
   );
