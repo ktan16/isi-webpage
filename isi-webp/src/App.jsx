@@ -15,6 +15,7 @@ function App() {
         <About />
         <Title subTitle="Gallery" title="show me the ropes" />
         <Gallery />
+        <Title subTitle="Contact Us" title="get in touch" />
       </div>
     </div>
   );
