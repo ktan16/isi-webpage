@@ -4,6 +4,7 @@ import Top from "./components/Top/Top";
 import About from "./components/About/About";
 import Title from "./components/Title/Title";
 import Gallery from "./components/Gallery/Gallery";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Title subTitle="Gallery" title="show me the ropes" />
         <Gallery />
         <Title subTitle="Contact Us" title="get in touch" />
+        <Contact />
       </div>
     </div>
   );

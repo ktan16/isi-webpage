@@ -15,18 +15,13 @@ const About = () => {
           <h2>WHAT WE DO</h2>
           <h1>strength that lasts</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            accusantium natus sequi. Nostrum ratione error eum enim perferendis
-            hic porro, facere blanditiis nihil repellendus necessitatibus optio
-            esse saepe quo fugiat quisquam laborum obcaecati cupiditate non et
-            neque. Consectetur ad excepturi incidunt distinctio molestias
-            reprehenderit facere, iste error illo ab, quae ex aperiam illum
-            assumenda, deserunt explicabo praesentium quo vero expedita
-            provident? Omnis maiores, eaque dolor esse fuga reprehenderit, culpa
-            quidem veritatis necessitatibus repellendus praesentium sapiente
-            obcaecati id earum odit officiis nam? Nemo incidunt at deserunt vel
-            molestiae! Suscipit sequi temporibus atque accusamus deleniti,
-            minima alias assumenda excepturi totam quasi illo.
+            We craft ropes that stand the test of time, providing unwavering
+            durability and superior performance for a wide range of
+            applications. From everyday use to demanding industrial
+            environments, our products are engineered to deliver lasting
+            strength and reliability. Serving all types of markets, we are
+            dedicated to producing ropes that meet the highest standards,
+            ensuring its strength can be trusted for years to come.
           </p>
         </div>
       </div>
@@ -36,18 +31,13 @@ const About = () => {
           <h2>WHY WE DO IT</h2>
           <h1>support you can trust</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            tempora molestiae alias ipsum quibusdam expedita totam id eum
-            facere, aliquid sunt autem provident quos, incidunt repudiandae
-            suscipit corporis excepturi nam, inventore odit temporibus eaque.
-            Perferendis delectus aliquid error ipsa unde, natus officiis
-            expedita saepe, nostrum harum aperiam provident voluptates sed odio
-            illo optio animi dolorem quia quam maxime voluptate eaque velit
-            iusto. Non cupiditate qui minima consectetur sapiente impedit fugiat
-            laborum dolores velit ipsam laudantium atque adipisci accusamus in
-            earum nisi reiciendis esse, reprehenderit facere numquam ducimus!
-            Alias, sapiente maxime? Deleniti aliquid blanditiis magni sed dolore
-            voluptatem repudiandae obcaecati sapiente.
+            Our mission is to provide more than just products—we aim to offer
+            dependable solutions that our customers can rely on. We are driven
+            by a commitment to safety, quality, and innovation, ensuring that
+            every rope we create meets the unique needs of our clients. By
+            supporting industries and individuals with trusted tools, we help
+            build stronger connections, inspire confidence, and contribute to
+            progress in every project.
           </p>
         </div>
 
