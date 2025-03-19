@@ -14,4 +14,30 @@
   font-weight: 600;
   font-size: 25px;
   font-family: "Lora", serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-col p {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-col ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 4px;
 }
