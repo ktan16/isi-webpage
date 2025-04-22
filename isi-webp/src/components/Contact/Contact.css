@@ -62,3 +62,12 @@ form input::placeholder,
 form textarea::placeholder {
   font-size: 14px;
 }
+
+.contact-col span {
+  display: block;
+  margin: 20px 0;
+}
+
+.contact-col span.value {
+  color: #4a4a4a;
+}

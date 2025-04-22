@@ -64,7 +64,7 @@ const Contact = () => {
           </button>
         </form>
 
-        <span>Sending</span>
+        <span></span>
       </div>
     </div>
   );
