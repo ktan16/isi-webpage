@@ -34,26 +34,28 @@ const Contact = () => {
       </div>
 
       <div className="contact-col">
-        <form>
+        <form 
+        action="https://formspree.io/f/xgvkavkb" method="POST"
+        >
           <label>Name</label>
           <input
             type="text"
-            name="name"
+            name="Name"
             placeholder="Enter your name"
             required
           />
 
           <label>Email</label>
           <input
-            type="text"
-            name="email"
+            type="email"
+            name="Email"
             placeholder="Enter your email"
             required
           />
 
           <label>Message</label>
           <textarea
-            name="message"
+            name="Message"
             rows="6"
             placeholder="Enter your message"
             required
@@ -63,8 +65,6 @@ const Contact = () => {
             Submit
           </button>
         </form>
-
-        <span></span>
       </div>
     </div>
   );
