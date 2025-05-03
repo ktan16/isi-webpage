@@ -31,7 +31,7 @@ const About = () => {
           <h2>WHY WE DO IT</h2>
           <h1>support you can trust</h1>
           <p>
-            Our mission is to provide more than just products—we aim to offer
+            Our mission is to provide more than just products. We aim to offer
             dependable solutions that our customers can rely on. We are driven
             by a commitment to safety, quality, and innovation, ensuring that
             every rope we create meets the unique needs of our clients. By
