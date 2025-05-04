@@ -1,12 +1,12 @@
 import React from "react";
-import "./Top.css";
+import "./Hero.css";
 
-const Top = () => {
+const Hero = () => {
   return (
-    <div className="top container">
+    <div className="hero container">
       <h1>Tying quality to every knot.</h1>
     </div>
   );
 };
 
-export default Top;
+export default Hero;

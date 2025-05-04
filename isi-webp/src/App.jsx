@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Top from "./components/Top/Top";
+import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Title from "./components/Title/Title";
 import Gallery from "./components/Gallery/Gallery";
@@ -12,18 +12,22 @@ function App() {
     <div>
       <Navbar />
       <Element name="home">
-        <Top />
+        <Hero />
       </Element>
-      
+
       <div className="container">
         <Element name="about-us" className="section">
-          <About title={<Title subTitle="About Us" title="who we are" />}/>
+          <About title={<Title subTitle="About Us" title="who we are" />} />
         </Element>
         <Element name="img-gallery" className="section">
-          <Gallery title={<Title subTitle="Gallery" title="show me the ropes" />}/>
+          <Gallery
+            title={<Title subTitle="Gallery" title="show me the ropes" />}
+          />
         </Element>
         <Element name="contact-us">
-          <Contact title={<Title subTitle="Contact Us" title="get in touch" />}/>
+          <Contact
+            title={<Title subTitle="Contact Us" title="get in touch" />}
+          />
         </Element>
       </div>
     </div>

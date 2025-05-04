@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
-.top {
+.hero {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -9,7 +9,7 @@
   background-position: center;
 }
 
-.top h1 {
+.hero h1 {
   font-family: "Lora", serif;
   color: rgb(255, 255, 255);
   position: absolute;
