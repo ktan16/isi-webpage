@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-scroll';
 import "./Navbar.css";
 import isi_logo from "../../assets/isi_short_logo.png";
 import isi_logo_dark from "../../assets/isi_short_logo_dark.png";
@@ -23,13 +24,41 @@ const Navbar = () => {
       <h1>International Synthetic</h1>
       <h2>INDUSTRIES, INC.</h2>
       <ul>
-        <li>Home</li>
+        <li>
+          <Link 
+          to ="home" 
+          smooth={true} 
+          duration={500}>
+            Home
+          </Link>
+        </li>
 
-        <li>About</li>
+        <li>
+          <Link 
+          to ="about-us" 
+          smooth={true} 
+          duration={500}>
+            About
+          </Link>
+        </li>
 
-        <li>Gallery</li>
+        <li>
+          <Link 
+          to ="img-gallery" 
+          smooth={true} 
+          duration={500}>
+            Gallery
+          </Link>
+        </li>
 
-        <li>Contact</li>
+        <li>
+          <Link 
+          to ="contact-us" 
+          smooth={true} 
+          duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
   );

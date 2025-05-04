@@ -21,9 +21,10 @@ import roll18 from "../../assets/gallery/roll_18.jpg";
 import roll19 from "../../assets/gallery/roll_19.jpg";
 import roll20 from "../../assets/gallery/roll_20.jpg";
 
-const Gallery = () => {
+const Gallery = ( {title} ) => {
   return (
     <div>
+      {title}
       <div className="gallery">
         <img src={roll1} alt="" />
         <img src={roll2} alt="" />

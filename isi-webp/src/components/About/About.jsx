@@ -3,9 +3,10 @@ import "./About.css";
 import about1 from "../../assets/about1.jpg";
 import about2 from "../../assets/about2.jpg";
 
-const About = () => {
+const About = ( {title} ) => {
   return (
     <div className="about">
+      {title}
       <div className="about-what">
         <div className="about-what-left">
           <img src={about1} alt="" className="about-what-img" />
