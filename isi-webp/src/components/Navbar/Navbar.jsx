@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 import "./Navbar.css";
 import isi_logo from "../../assets/isi_short_logo.png";
 import isi_logo_dark from "../../assets/isi_short_logo_dark.png";
@@ -16,46 +16,39 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar container ${sticky ? "dark-nav" : ""}`}>
-      <img
-        src={`${sticky ? isi_logo_dark : isi_logo}`}
-        alt=""
-        className="logo"
-      />
-      <h1>International Synthetic</h1>
-      <h2>INDUSTRIES, INC.</h2>
+      <Link to="home" smooth={true} duration={500} className="logo-container">
+        <img
+          src={`${sticky ? isi_logo_dark : isi_logo}`}
+          alt=""
+          className="logo"
+        />
+        <div className="logo-text">
+          <h1>International Synthetic</h1>
+          <h2>INDUSTRIES, INC.</h2>
+        </div>
+      </Link>
+
       <ul>
         <li>
-          <Link 
-          to ="home" 
-          smooth={true} 
-          duration={500}>
+          <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
 
         <li>
-          <Link 
-          to ="about-us" 
-          smooth={true} 
-          duration={500}>
+          <Link to="about-us" smooth={true} duration={500}>
             About
           </Link>
         </li>
 
         <li>
-          <Link 
-          to ="img-gallery" 
-          smooth={true} 
-          duration={500}>
+          <Link to="img-gallery" smooth={true} duration={500}>
             Gallery
           </Link>
         </li>
 
         <li>
-          <Link 
-          to ="contact-us" 
-          smooth={true} 
-          duration={500}>
+          <Link to="contact-us" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
