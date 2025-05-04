@@ -1,18 +1,24 @@
+// About.jsx
+// About section featuring descriptive text and supporting imagery
+
 import React from "react";
 import "./About.css";
 import about1 from "../../assets/about1.jpg";
 import about2 from "../../assets/about2.jpg";
 
-const About = ( {title} ) => {
+const About = ({ title }) => {
   return (
-    <div className="about">
+    <div className="about-container">
+      {/* Reusable title passed in as prop */}
       {title}
-      <div className="about-what">
-        <div className="about-what-left">
-          <img src={about1} alt="" className="about-what-img" />
+
+      {/* "What we do" section; img -> text */}
+      <div className="about-block">
+        <div className="about-img">
+          <img src={about1} alt="" className="about-img-size" />
         </div>
 
-        <div className="about-what-right">
+        <div className="about-text">
           <h2>WHAT WE DO</h2>
           <h1>strength that lasts</h1>
           <p>
@@ -27,8 +33,9 @@ const About = ( {title} ) => {
         </div>
       </div>
 
-      <div className="about-why">
-        <div className="about-why-left">
+      {/* "Why we do it" section: text -> img */}
+      <div className="about-block">
+        <div className="about-text">
           <h2>WHY WE DO IT</h2>
           <h1>support you can trust</h1>
           <p>
@@ -42,8 +49,8 @@ const About = ( {title} ) => {
           </p>
         </div>
 
-        <div className="about-why-right">
-          <img src={about2} alt="" className="about-why-img" />
+        <div className="about-img">
+          <img src={about2} alt="" className="about-img-size" />
         </div>
       </div>
     </div>
