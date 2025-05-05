@@ -1,5 +1,7 @@
-// App.jsx
-// Main application. Uses react-scroll to navigate.
+/*
+  App.jsx
+  Main application. Uses react-scroll to navigate.
+*/
 
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";

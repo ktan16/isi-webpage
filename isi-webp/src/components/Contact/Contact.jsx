@@ -1,5 +1,7 @@
-// Contact.jsx
-// Contact Us section with contact info and Formspree form submission
+/* 
+  Contact.jsx
+  Contact Us section with contact info and Formspree form submission.
+*/
 
 import React from "react";
 import "./Contact.css";

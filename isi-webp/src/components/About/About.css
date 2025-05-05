@@ -1,7 +1,9 @@
-/* About.css */
-/* Styling for the about section */
+/* 
+  About.css
+  Styling for the about section.
+*/
 
-/* Import Lato font from Google Fonts */
+/* Import Lora font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 /* ==== About Section Container ==== */
@@ -20,6 +22,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 15px;
 }
 
 /* ==== Image Container and Styling ==== */

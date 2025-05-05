@@ -1,5 +1,7 @@
-// About.jsx
-// About section featuring descriptive text and supporting imagery
+/*
+  About.jsx 
+  About section featuring descriptive text and supporting imagery.
+*/
 
 import React from "react";
 import "./About.css";
