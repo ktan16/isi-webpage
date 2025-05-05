@@ -1,3 +1,6 @@
+// Gallery.jsx
+// Gallery section featuring images of the product
+
 import React from "react";
 import "./Gallery.css";
 import roll1 from "../../assets/gallery/roll_1.jpg";
@@ -21,7 +24,7 @@ import roll18 from "../../assets/gallery/roll_18.jpg";
 import roll19 from "../../assets/gallery/roll_19.jpg";
 import roll20 from "../../assets/gallery/roll_20.jpg";
 
-const Gallery = ( {title} ) => {
+const Gallery = ({ title }) => {
   return (
     <div>
       {title}

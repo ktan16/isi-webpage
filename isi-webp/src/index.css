@@ -4,7 +4,7 @@
 /* Import Lato font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-/* Global settings */
+/* Global Settings */
 * {
   margin: 0;
   padding: 0;
@@ -12,18 +12,18 @@
   font-family: "Lato", sans-serif;
 }
 
-/* Main bg color */
+/* Main BG color */
 body {
   background: #f5f5f5;
 }
 
-/* Horizontal padding for consistency */
+/* Horizontal Padding for Consistency */
 .container {
   padding-left: 5%;
   padding-right: 5%;
 }
 
-/* General button styling */
+/* General Button Styling */
 .btn {
   background: #ff3300;
   color: #f5f5f5;
@@ -36,13 +36,13 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Hover effect for style */
+/* Hover Effect for Style */
 .btn:hover {
   color: black;
   text-decoration: underline;
 }
 
-/* Top padding for react scroll & navbar */
+/* Top Padding for react-scroll & navbar */
 .section {
   padding-top: 100px;
 }

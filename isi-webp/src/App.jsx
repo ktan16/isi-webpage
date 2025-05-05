@@ -13,29 +13,30 @@ import { Element } from "react-scroll"; // Enables smooth scrolling
 function App() {
   return (
     <div>
-      {/* Sticky nav bar */}
+      {/* ==== Sticky nav bar ==== */}
       <Navbar />
 
-      {/* Hero section with main image of rope and quote. */}
-      {/* Scroll anchor: home */}
+      {/* ==== Hero Section ==== */}
       <Element name="home">
         <Hero />
       </Element>
 
-      {/* Main component container */}
+      {/* ==== Main Component Container ==== */}
       {/* Each section has reusable title */}
       <div className="container">
-        {/* About us section */}
+        {/* ==== About us section ==== */}
         <Element name="about-us" className="section">
           <About title={<Title subTitle="About Us" title="who we are" />} />
         </Element>
-        {/* Image gallery for product */}
+
+        {/* ==== Image gallery for product ==== */}
         <Element name="img-gallery" className="section">
           <Gallery
             title={<Title subTitle="Gallery" title="show me the ropes" />}
           />
         </Element>
-        {/* Contact section with form */}
+
+        {/* ==== Contact section with form ==== */}
         <Element name="contact-us">
           <Contact
             title={<Title subTitle="Contact Us" title="get in touch" />}

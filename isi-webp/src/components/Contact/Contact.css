@@ -1,15 +1,21 @@
+/* Contact.css */
+/* Styling for the contact section */
+
+/* ==== Contact Us Section Container ==== */
 .contact {
-  margin: 80px auto;
-  max-width: 90%;
+  margin: 80px auto; /* Vertical spacing and center alignment */
+  max-width: 90%; /* Slight padding for consistency */
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Places contact info next to form */
 }
 
+/* ==== Column Styling ==== */
 .contact-col {
-  flex-basis: 48%;
+  flex-basis: 48%; /* Each column takes < half width */
 }
 
+/* ==== Contact Info Styling ==== */
 .contact-col h3 {
   font-weight: 600;
   font-size: 25px;
@@ -29,20 +35,30 @@
 .contact-col ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; /* Provides spacing between list items */
 }
 
 .contact-col ul li {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack label and value vertically */
 }
 
 .label {
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 4px; /* Space between label and value */
 }
 
+.contact-col span {
+  display: block;
+  margin: 10px 0;
+}
+
+.contact-col span.value {
+  color: #4a4a4a;
+}
+
+/* ==== Form Styling ==== */
 .contact form input,
 .contact form textarea {
   display: block;
@@ -54,20 +70,11 @@
   outline: 0;
   margin-bottom: 25px;
   margin-top: 10px;
-  resize: none;
+  resize: none; /* No manual resize */
 }
 
-/* consistent size for placeholders */
+/* Consistent font size for input placeholders */
 form input::placeholder,
 form textarea::placeholder {
   font-size: 14px;
-}
-
-.contact-col span {
-  display: block;
-  margin: 10px 0;
-}
-
-.contact-col span.value {
-  color: #4a4a4a;
 }

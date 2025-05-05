@@ -1,17 +1,23 @@
+// Contact.jsx
+// Contact Us section with contact info and Formspree form submission
+
 import React from "react";
 import "./Contact.css";
 
-const Contact = ( {title} ) => {
+const Contact = ({ title }) => {
   return (
     <div>
+      {/* Reusable Title passed in as prop */}
       {title}
+
       <div className="contact">
+        {/* ===== Contact Information Column ==== */}
         <div className="contact-col">
           <h3>Send us a message</h3>
           <p>
-            Inquire using our contact form, or use our contact information below.
-            Your feedback, questions, and suggestions are essential to our ability
-            to provide exceptional service.
+            Inquire using our contact form, or use our contact information
+            below. Your feedback, questions, and suggestions are essential to
+            our ability to provide exceptional service.
           </p>
 
           <ul>
@@ -28,17 +34,17 @@ const Contact = ( {title} ) => {
             <li>
               <span className="label">Address:</span>
               <span className="value">
-                389 Elpidio Quirino Highway, Barangay Talipapa, Novaliches, Quezon
-                City, Philippines
+                389 Elpidio Quirino Highway, Barangay Talipapa, Novaliches,
+                Quezon City, Philippines
               </span>
             </li>
           </ul>
         </div>
 
+        {/* ==== Contact form column ==== */}
         <div className="contact-col">
-          <form 
-          action="https://formspree.io/f/xgvkavkb" method="POST"
-          >
+          {/* Form submits to Formspree API to handle backend for client messages */}
+          <form action="https://formspree.io/f/xgvkavkb" method="POST">
             <label>Name</label>
             <input
               type="text"
@@ -70,7 +76,6 @@ const Contact = ( {title} ) => {
         </div>
       </div>
     </div>
-    
   );
 };
 
