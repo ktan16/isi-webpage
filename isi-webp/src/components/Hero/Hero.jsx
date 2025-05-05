@@ -1,3 +1,8 @@
+/*
+  Hero.jsx
+  Hero section displaying main headline & brand message.
+*/
+
 import React from "react";
 import "./Hero.css";
 
