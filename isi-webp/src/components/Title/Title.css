@@ -1,5 +1,13 @@
+/* 
+  File: Title.css
+  Description: Styling for the reusable titles.
+  Author: Kendrick Tan
+*/
+
+/* Import Lora font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
+/* ==== Heading ==== */
 .title {
   text-align: center;
   color: black;
@@ -9,6 +17,7 @@
   margin: 70px 0 30px;
 }
 
+/* ==== Subheading ==== */
 .title h2 {
   font-size: 32px;
   color: #ff3300;
