@@ -18,6 +18,7 @@
 /* Main BG color */
 body {
   background: #f5f5f5;
+  font-size: 1rem;
 }
 
 /* Horizontal Padding for Consistency */
@@ -30,13 +31,15 @@ body {
 .btn {
   background: #ff3300;
   color: #f5f5f5;
-  padding: 14px 25px;
-  font-size: 16px;
-  border-radius: 30px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
   cursor: pointer;
   border: 0;
   outline: 0;
   transition: color 0.3s ease;
+  display: inline-block;
+  text-align: center;
 }
 
 /* Hover Effect for Style */
@@ -47,5 +50,5 @@ body {
 
 /* Top Padding for react-scroll & navbar */
 .section {
-  padding-top: 100px;
+  padding-top: 6rem;
 }
