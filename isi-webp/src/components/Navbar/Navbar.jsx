@@ -1,20 +1,30 @@
+/*
+  File: Navbar.jsx
+  Description: Sticky navigation bar with dynamic light/dark color change and react-scroll navigation.
+  Author: Kendrick Tan
+*/
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
+
+// Logo variations, changes based on scroll
 import isi_logo from "../../assets/isi_short_logo.png";
 import isi_logo_dark from "../../assets/isi_short_logo_dark.png";
 
 const Navbar = () => {
-  const [sticky, setSticky] = useState(false); // sticky state for changing nav bar color
+  // Tracks whether navbar should have dark bg
+  const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
+    // Adds scroll listener to toggle light vs dark navbar
     window.addEventListener("scroll", () => {
-      // event listener for scrolling
-      window.scrollY > 810 ? setSticky(true) : setSticky(false); // if scroll more than 800px, dark navbar
+      window.scrollY > 800 ? setSticky(true) : setSticky(false); // If scroll more than 800px, dark navbar
     });
   }, []);
 
   return (
+    // Navbar container with conditional dark theme
     <nav className={`navbar container ${sticky ? "dark-nav" : ""}`}>
       <Link to="home" smooth={true} duration={500} className="logo-container">
         <img
@@ -28,6 +38,7 @@ const Navbar = () => {
         </div>
       </Link>
 
+      {/* ==== Navigation links to main sections ==== */}
       <ul>
         <li>
           <Link to="home" smooth={true} duration={500}>
