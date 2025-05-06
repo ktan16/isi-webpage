@@ -1,6 +1,7 @@
 /* 
-  Contact.jsx
-  Contact Us section with contact info and Formspree form submission.
+  File: Contact.jsx
+  Description: Contact Us section with contact info and Formspree form submission.
+  Author: Kendrick Tan
 */
 
 import React from "react";

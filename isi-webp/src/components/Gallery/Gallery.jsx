@@ -1,6 +1,7 @@
 /*
-  Gallery.jsx
-  Gallery section featuring images of the product.
+  File: Gallery.jsx
+  Description: Gallery section featuring images of the product.
+  Author: Kendrick Tan
 */
 
 import React from "react";

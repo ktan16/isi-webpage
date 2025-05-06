@@ -1,6 +1,7 @@
 /*
-  App.jsx
-  Main application. Uses react-scroll to navigate.
+  File: App.jsx
+  Description: Main application. Uses react-scroll to navigate.
+  Author: Kendrick Tan
 */
 
 import React from "react";
@@ -28,20 +29,20 @@ function App() {
       <div className="container">
         {/* ==== About us section ==== */}
         <Element name="about-us" className="section">
-          <About title={<Title subTitle="About Us" title="who we are" />} />
+          <About title={<Title heading="About Us" subHeading="who we are" />} />
         </Element>
 
         {/* ==== Image gallery for product ==== */}
         <Element name="img-gallery" className="section">
           <Gallery
-            title={<Title subTitle="Gallery" title="show me the ropes" />}
+            title={<Title heading="Gallery" subHeading="show me the ropes" />}
           />
         </Element>
 
         {/* ==== Contact section with form ==== */}
-        <Element name="contact-us">
+        <Element name="contact-us" className="section">
           <Contact
-            title={<Title subTitle="Contact Us" title="get in touch" />}
+            title={<Title heading="Contact Us" subHeading="get in touch" />}
           />
         </Element>
       </div>

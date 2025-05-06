@@ -1,6 +1,7 @@
 /*
-  Hero.jsx
-  Hero section displaying main headline & brand message.
+  File: Hero.jsx
+  Description: Hero section displaying main headline & brand message.
+  Author: Kendrick Tan
 */
 
 import React from "react";
