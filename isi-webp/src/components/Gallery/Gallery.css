@@ -9,13 +9,13 @@
   display: flex; /* To display images in rows */
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px; /* Spacing between images*/
+  gap: 2.5rem; /* Spacing between images*/
 }
 
 /* ==== Individual Gallery Items ==== */
 .gallery > * {
-  flex: 1 1 250px;
-  max-width: 250px;
+  flex: 1 1 12rem;
+  max-width: 12rem;
 }
 
 /* ==== Image Styling ==== */

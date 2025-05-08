@@ -6,7 +6,7 @@
 
 /* ==== Contact Us Section Container ==== */
 .contact {
-  margin: 80px auto; /* Vertical spacing and center alignment */
+  margin: 0 auto 6rem; /* Center alignment and bottom space */
   max-width: 90%; /* Slight padding for consistency */
   display: flex;
   align-content: center;
@@ -21,24 +21,24 @@
 /* ==== Contact Info Styling ==== */
 .contact-col h3 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: "Lora", serif;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .contact-col p {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   color: #4a4a4a;
 }
 
 .contact-col ul {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Provides spacing between list items */
+  gap: 1.25rem; /* Provides spacing between list items */
 }
 
 .contact-col ul li {
@@ -49,12 +49,12 @@
 
 .label {
   font-weight: bold;
-  margin-bottom: 4px; /* Space between label and value */
+  margin-bottom: 0.25rem; /* Space between label and value */
 }
 
 .contact-col span {
   display: block;
-  margin: 10px 0;
+  margin: 0.5rem 0;
 }
 
 .contact-col span.value {
@@ -67,12 +67,12 @@
   display: block;
   width: 100%;
   background: #e8e8e8;
-  padding: 15px;
+  padding: 1rem;
   border: 0;
-  border-radius: 10px;
+  border-radius: 0.75rem;
   outline: 0;
-  margin-bottom: 25px;
-  margin-top: 10px;
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
   resize: none; /* No manual resize */
 }
 
