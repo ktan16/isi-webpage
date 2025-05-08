@@ -24,7 +24,7 @@ const About = ({ title }) => {
         <div className="about-text">
           <h2>WHAT WE DO</h2>
           <h1>strength that lasts</h1>
-          <p className="about-p">
+          <p>
             We craft ropes that stand the test of time, providing unwavering
             durability and superior performance for a wide range of
             applications. From everyday use to demanding industrial
@@ -41,7 +41,7 @@ const About = ({ title }) => {
         <div className="about-text">
           <h2>WHY WE DO IT</h2>
           <h1>support you can trust</h1>
-          <p className="about-p">
+          <p>
             Our mission is to provide more than just products. We aim to offer
             dependable solutions that our customers can rely on. We are driven
             by a commitment to safety, quality, and innovation, ensuring that
