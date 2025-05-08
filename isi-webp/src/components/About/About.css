@@ -9,21 +9,21 @@
 
 /* ==== About Section Container ==== */
 .about-container {
-  margin: 0px auto; /* Center container */
+  margin: 0 auto; /* Center container */
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 90%; /* Creates padding from screen edge */
-  gap: 50px; /* Vertical gap between blocks */
+  /* Vertical gap between blocks */
 }
 
 /* ==== Section Blocks (What We Do/Why We Do It)  ==== */
 .about-block {
+  margin: 0 auto 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 15px;
 }
 
 /* ==== Image Container and Styling ==== */
@@ -32,34 +32,43 @@
 }
 
 .about-img-size {
-  width: 650px;
-  height: 450px;
-  margin-right: 15px;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 0.75rem;
 }
 
 /* ==== Text Container ==== */
 .about-text {
-  flex-basis: 56%;
+  flex-basis: 55%;
 }
 
 /* ==== Headings and Paragraphs Styling ==== */
 .about-container h2 {
-  margin-bottom: 10px;
-  font-size: 16px;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 .about-container h1 {
   font-family: "Lora", serif;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 1.5rem;
   text-align: center;
   color: #ff3300;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
-.about-p {
-  line-height: 30px;
+.about-container p {
+  font-size: 1rem;
+  line-height: 2rem;
   color: #4a4a4a;
+}
+
+/* ==== Media Query ==== */
+@media (max-width: 1100px) {
+  .about-container p {
+    font-size: 0.75rem;
+  }
 }

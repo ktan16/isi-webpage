@@ -10,7 +10,7 @@
 /* ==== General Styling for Navbar ==== */
 nav {
   width: 100%;
-  padding: 4px 0;
+  padding: 0.25rem 0;
   transition: 0.5s; /* Smooth color transition on scroll */
   color: black;
   background: #f5f5f5; /* Default light mode */
@@ -25,7 +25,7 @@ nav {
 
 /* ==== Logo Styling ==== */
 .logo {
-  width: 120px;
+  width: 7.5rem;
 }
 
 .logo-container {
@@ -35,24 +35,30 @@ nav {
 }
 
 /* ==== Brand Text ==== */
-.navbar h1 {
-  font-family: "Lora", serif;
-  color: #ff3300;
-  font-size: 25px;
+.logo-text {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.navbar h2 {
-  position: fixed;
+.logo-text h1 {
+  font-family: "Lora", serif;
+  color: #ff3300;
+  font-size: 1.5rem;
+}
+
+.logo-text h2 {
   color: black;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 /* ==== Navigation Links ==== */
 .navbar ul li {
   display: inline-block;
   list-style: none;
-  margin: 5px 40px;
-  font-size: 18px;
+  margin: 0.25rem 2.5rem;
+  font-size: 1.25rem;
   transition: color 0.3s ease;
   cursor: pointer;
 }
@@ -71,4 +77,22 @@ nav {
 
 .dark-nav h2 {
   color: #f5f5f5;
+}
+
+/* ==== Media Query ==== */
+@media (max-width: 1100px) {
+  .logo {
+    width: 5rem;
+  }
+  .logo-text h1 {
+    font-size: 1.25rem;
+  }
+  .logo-text h2 {
+    font-size: 0.75rem;
+  }
+
+  .navbar ul li {
+    font-size: 1rem;
+    margin: 0.25rem 2rem;
+  }
 }
