@@ -14,21 +14,27 @@ import isi_logo_dark from "../../assets/isi_short_logo_dark.png";
 
 const Navbar = () => {
   // Tracks whether navbar should have dark bg
-  const [sticky, setSticky] = useState(false);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    // Adds scroll listener to toggle light vs dark navbar
-    window.addEventListener("scroll", () => {
-      window.scrollY > 800 ? setSticky(true) : setSticky(false); // If scroll more than 800px, dark navbar
-    });
+    // Scroll function that enables dark navbar feature
+    const handleScroll = () => {
+      // scrollY > 100% of viewport height to trigger dark navbar
+      const triggerPoint = window.innerHeight;
+      setDark(window.scrollY > triggerPoint);
+    };
+
+    // Create and Clean up scroll listener
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     // Navbar container with conditional dark theme
-    <nav className={`navbar container ${sticky ? "dark-nav" : ""}`}>
+    <nav className={`navbar container ${dark ? "dark-nav" : ""}`}>
       <Link to="home" smooth={true} duration={500} className="logo-container">
         <img
-          src={`${sticky ? isi_logo_dark : isi_logo}`}
+          src={`${dark ? isi_logo_dark : isi_logo}`}
           alt=""
           className="logo"
         />
