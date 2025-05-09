@@ -12,7 +12,7 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../assets/top.jpg"); /* Main background image */
+    url("../../assets/hero.jpg"); /* Main background image */
   background-size: cover;
   background-position: center;
 }
