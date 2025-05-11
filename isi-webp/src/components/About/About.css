@@ -14,7 +14,6 @@
   align-items: center;
   flex-direction: column;
   width: 90%; /* Creates padding from screen edge */
-  /* Vertical gap between blocks */
 }
 
 /* ==== Section Blocks (What We Do/Why We Do It)  ==== */
