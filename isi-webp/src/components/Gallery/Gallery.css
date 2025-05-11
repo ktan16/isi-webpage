@@ -1,31 +1,95 @@
 /* 
   File: Gallery.css
-  Description: Styling for the product gallery.
+  Description: Stylings for image gallery.
   Author: Kendrick Tan
 */
 
-/* ==== Image Gallery Container ==== */
-.gallery {
-  display: flex; /* To display images in rows */
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem; /* Spacing between images*/
+/* ==== Gallery Section Container ==== */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* ==== Individual Gallery Items ==== */
-.gallery > * {
-  flex: 1 1 12rem;
-  max-width: 12rem;
-}
-
-/* ==== Image Styling ==== */
-.gallery img {
+/* ==== Outer Scroller Wrapper ==== */
+.gallery-scroller {
+  max-width: 1200px;
   width: 100%;
-  border-radius: 5%; /* Slight rounding */
-  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  /* Dual edge fade */
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-/* Hover Effect */
-.gallery img:hover {
-  transform: scale(1.1); /* Zoom-in effect on img hover */
+/* ==== Inner Scroller Wrapper ==== */
+.scroller-inner {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures all images are in horizontal line */
+  gap: 1rem; /* Spacing between images */
+  padding-block: 2rem; /* Vertical padding to accommodate shadows */
+  width: max-content; /* Allows row to expand based on content */
+  will-change: transform; /* Hint for smoother GPU animation */
+  transition: transform 2s ease-out; /* Smooth transition if transform is adjusted */
+}
+
+/* ==== Individual Image Styling ==== */
+.gallery-scroller img {
+  width: 12rem;
+  height: auto;
+  border-radius: 5%; /* Rounded corners */
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25); /* Bottom shadow */
+  flex-shrink: 0; /* Prevent images from shrinking */
+  transition: all 0.3s ease; /* Smooth zoom on hover */
+}
+
+/* Zoom-in effect on img hover */
+.gallery-scroller img:hover {
+  transform: scale(1.1);
+}
+
+/* ==== Gallery Animations ==== */
+
+/* Only animate when data-animated is true */
+.gallery-scroller:not([data-animated="true"]) .scroller-inner {
+  animation: none;
+}
+
+/* Pause animation when hovered */
+.gallery-scroller[data-direction="right"][data-animated="true"]:hover
+  .scroller-inner,
+.gallery-scroller[data-direction="left"][data-animated="true"]:hover
+  .scroller-inner {
+  animation-play-state: paused !important;
+}
+
+/* Animation: scroll left */
+.gallery-scroller[data-direction="left"][data-animated="true"] .scroller-inner {
+  animation: scroll 50s linear infinite;
+}
+
+/* Animation: scroll right (reversed) */
+.gallery-scroller[data-direction="right"][data-animated="true"]
+  .scroller-inner {
+  animation: scroll-reverse 65s linear infinite;
+}
+
+/* Leftward scrolling animation (used for top row) */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Rightward scrolling animation (used for bottom row) */
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

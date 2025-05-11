@@ -1,50 +1,68 @@
-/*
+/* 
   File: Gallery.jsx
-  Description: Gallery section featuring images of the product.
+  Description: Infinite photo gallery section with zoom and pause on hover.
   Author: Kendrick Tan
 */
-
-import React from "react";
+import React, { useEffect } from "react";
 import "./Gallery.css";
 
-/* 
-  Tells Vite to automatically import all .jpg in gallery folder
-  Keys = file paths, values = module objects containing image URLs
-*/
-const imageModules = import.meta.glob("../../assets/gallery/*.jpg", {
-  eager: true, // Import immediately
-});
+// Dynamically import all roll_*.jpg images
+const rollImages = Object.values(
+  import.meta.glob("../../assets/gallery/roll_*.jpg", { eager: true })
+).map((mod) => mod.default);
 
-/*
-  Creates list of image URLs and then sort.
+// Shuffle images for random order
+const shuffled = [...rollImages].sort(() => Math.random() - 0.5);
 
-  images = [
-    "/assets/gallery/roll_01.jpg",
-    "/assets/gallery/roll_02.jpg",
-    ...
-    "/assets/gallery/roll_20.jpg"
-  ]
-*/
-const images = Object.values(imageModules)
-  .map((mod) => mod.default)
-  .sort();
+// Split into two non-overlapping halves
+const topRow = shuffled.slice(0, 10);
+const bottomRow = shuffled.slice(10, 20);
 
 const Gallery = ({ title }) => {
+  // Allows data animation if user prefers
+  useEffect(() => {
+    // If user's browser does not prefer reduced motion, can animate
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      // Select all .gallery-scroller elements in DOM
+      const scrollers = document.querySelectorAll(".gallery-scroller");
+      scrollers.forEach((scroller) => {
+        // Add data-animated = "true" to each element
+        scroller.setAttribute("data-animated", true);
+
+        // Find .scroller-inner elements in DOM
+        const scrollerInner = scroller.querySelector(".scroller-inner");
+
+        // Duplicate images in inner scroller for seamless infinite scroll
+        const scrollerContent = Array.from(scrollerInner.children);
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true); // Duplicate image
+          duplicatedItem.setAttribute("aria-hidden", true); // Hide from screen readers
+          scrollerInner.appendChild(duplicatedItem); // Add duplicate to the end
+        });
+      });
+    }
+  }, []);
+
   return (
-    <div>
-      {/* Reusable Title passed in as prop */}
+    <div className="gallery-container">
       {title}
 
-      {/* ==== Gallery Section ==== */}
-      <div className="gallery">
-        {/* Maps each item in images array to <img> element with src and alt */}
-        {images.map((src, index) => (
-          <img
-            key={index} // Unique key per item
-            src={src} // Image source
-            alt={`Gallery image ${index + 1}`} // Alt text for accessibility
-          />
-        ))}
+      {/* Top row: left scrolling */}
+      <div className="gallery-scroller" data-direction="left">
+        <div className="img-list scroller-inner">
+          {topRow.map((src, i) => (
+            <img key={`top-${i}`} src={src} alt={`Top Roll ${i + 1}`} />
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom row: right scrolling */}
+      <div className="gallery-scroller" data-direction="right">
+        <div className="img-list scroller-inner">
+          {bottomRow.map((src, i) => (
+            <img key={`bottom-${i}`} src={src} alt={`Bottom Roll ${i + 1}`} />
+          ))}
+        </div>
       </div>
     </div>
   );
