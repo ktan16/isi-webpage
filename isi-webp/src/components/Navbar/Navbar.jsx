@@ -11,6 +11,7 @@ import "./Navbar.css";
 // Logo variations, changes based on scroll
 import isi_logo from "../../assets/isi_short_logo.png";
 import isi_logo_dark from "../../assets/isi_short_logo_dark.png";
+import menu from "../../assets/menu.png";
 
 const Navbar = () => {
   // Tracks whether navbar should have dark bg
@@ -29,6 +30,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMenu = () => {
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+  };
+
   return (
     // Navbar container with conditional dark theme
     <nav className={`navbar container ${dark ? "dark-nav" : ""}`}>
@@ -45,7 +51,7 @@ const Navbar = () => {
       </Link>
 
       {/* ==== Navigation links to main sections ==== */}
-      <ul>
+      <ul className={`navbar-menu ${!mobileMenu ? "hide-mobile-menu" : ""}`}>
         <li>
           <Link to="home" smooth={true} duration={500}>
             Home
@@ -70,6 +76,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <img src={menu} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>
   );
 };
