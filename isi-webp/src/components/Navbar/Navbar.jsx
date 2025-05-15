@@ -14,7 +14,7 @@ import isi_logo_dark from "../../assets/isi_short_logo_dark.png";
 import menu from "../../assets/menu.png";
 
 const Navbar = () => {
-  // Tracks whether navbar should have dark bg
+  // useState for if navbar should have dark bg
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
@@ -30,7 +30,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // useState for if screen is small enough for menu mode
   const [mobileMenu, setMobileMenu] = useState(false);
+  // Function to toggle between menu modes
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
   };
