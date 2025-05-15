@@ -149,3 +149,13 @@ nav {
     color: #ff3300;
   }
 }
+
+@media (max-width: 500px) {
+  .logo-text h1,
+  .logo-text h2 {
+    display: none; /* Hide text when screen is too small */
+  }
+  .navbar-menu {
+    top: 6rem;
+  }
+}
