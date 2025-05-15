@@ -44,24 +44,27 @@ const Gallery = ({ title }) => {
   }, []);
 
   return (
-    <div className="gallery-container">
+    <div>
+      {/* Reusable Title passed in as prop */}
       {title}
 
-      {/* Top row: left scrolling */}
-      <div className="gallery-scroller" data-direction="left">
-        <div className="img-list scroller-inner">
-          {topRow.map((src, i) => (
-            <img key={`top-${i}`} src={src} alt={`Top Roll ${i + 1}`} />
-          ))}
+      <div className="gallery-container">
+        {/* Top row: left scrolling */}
+        <div className="gallery-scroller" data-direction="left">
+          <div className="img-list scroller-inner">
+            {topRow.map((src, i) => (
+              <img key={`top-${i}`} src={src} alt={`Top Roll ${i + 1}`} />
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Bottom row: right scrolling */}
-      <div className="gallery-scroller" data-direction="right">
-        <div className="img-list scroller-inner">
-          {bottomRow.map((src, i) => (
-            <img key={`bottom-${i}`} src={src} alt={`Bottom Roll ${i + 1}`} />
-          ))}
+        {/* Bottom row: right scrolling */}
+        <div className="gallery-scroller" data-direction="right">
+          <div className="img-list scroller-inner">
+            {bottomRow.map((src, i) => (
+              <img key={`bottom-${i}`} src={src} alt={`Bottom Roll ${i + 1}`} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -16,6 +16,10 @@
 /* ==== Column Styling ==== */
 .contact-col {
   flex-basis: 48%; /* Each column takes < half width */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 /* ==== Contact Info Styling ==== */
@@ -25,7 +29,6 @@
   font-family: "Lora", serif;
   display: flex;
   align-items: center;
-  margin-bottom: 1.25rem;
 }
 
 .contact-col p {
@@ -33,12 +36,12 @@
   align-items: center;
   margin: 1.25rem 0;
   color: #4a4a4a;
+  line-height: 1.5rem;
 }
 
 .contact-col ul {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem; /* Provides spacing between list items */
 }
 
 .contact-col ul li {
@@ -47,17 +50,13 @@
   flex-direction: column; /* Stack label and value vertically */
 }
 
-.label {
+.contact-col span.label {
+  margin-bottom: 1.25rem;
   font-weight: bold;
-  margin-bottom: 0.25rem; /* Space between label and value */
-}
-
-.contact-col span {
-  display: block;
-  margin: 0.5rem 0;
 }
 
 .contact-col span.value {
+  margin-bottom: 1.25rem;
   color: #4a4a4a;
 }
 
@@ -66,12 +65,12 @@
 .contact form textarea {
   display: block;
   width: 100%;
-  background: #e8e8e8;
+  background: #f4f4f4;
   padding: 1rem;
   border: 0;
   border-radius: 0.75rem;
   outline: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0.75rem;
   resize: none; /* No manual resize */
 }
@@ -79,5 +78,27 @@
 /* Consistent font size for input placeholders */
 form input::placeholder,
 form textarea::placeholder {
-  font-size: 14px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 870px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-col {
+    margin-bottom: 2rem;
+  }
+
+  .contact-col p {
+    margin: 0.75rem 0;
+  }
+
+  .contact-col span.label {
+    margin-bottom: 1rem;
+  }
+
+  .contact-col span.value {
+    margin-bottom: 1rem;
+  }
 }

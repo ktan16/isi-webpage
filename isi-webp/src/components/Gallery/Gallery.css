@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
 }
 
 /* ==== Outer Scroller Wrapper ==== */
@@ -19,7 +23,7 @@
   overflow: hidden;
 
   /* Dual edge fade */
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
 }
 
 /* ==== Inner Scroller Wrapper ==== */

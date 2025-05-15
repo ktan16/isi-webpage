@@ -48,7 +48,7 @@ const Contact = ({ title }) => {
         <div className="contact-col">
           {/* Form submits to Formspree API to handle backend for client messages */}
           <form action="https://formspree.io/f/xgvkavkb" method="POST">
-            <label>Name</label>
+            <label>Name:</label>
             <input
               type="text"
               name="Name"
@@ -56,7 +56,7 @@ const Contact = ({ title }) => {
               required
             />
 
-            <label>Email</label>
+            <label>Email:</label>
             <input
               type="email"
               name="Email"
@@ -64,7 +64,7 @@ const Contact = ({ title }) => {
               required
             />
 
-            <label>Message</label>
+            <label>Message:</label>
             <textarea
               name="Message"
               rows="6"

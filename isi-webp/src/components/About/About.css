@@ -18,6 +18,10 @@
 
 /* ==== Section Blocks (What We Do/Why We Do It)  ==== */
 .about-block {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
   margin: 0 auto 4rem;
   display: flex;
   align-items: center;
@@ -45,7 +49,7 @@
 
 /* ==== Headings and Paragraphs Styling ==== */
 .about-container h2 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   text-align: center;
 }
@@ -53,21 +57,63 @@
 .about-container h1 {
   font-family: "Lora", serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-align: center;
   color: #ff3300;
   margin-bottom: 0.75rem;
 }
 
 .about-container p {
-  font-size: 1rem;
-  line-height: 2rem;
+  margin: 4rem auto;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
   color: #4a4a4a;
 }
 
 /* ==== Media Query ==== */
 @media (max-width: 1100px) {
   .about-container p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .about-block {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .about-img {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  .about-img-size {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .about-text {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-container p {
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+
+  .about-container h2,
+  .about-container h1 {
+    text-align: center;
   }
 }
