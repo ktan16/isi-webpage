@@ -15,6 +15,7 @@
     url("../../assets/hero.jpg"); /* Main background image */
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 /* ==== Hero Headline ==== */
@@ -24,4 +25,12 @@
   position: absolute;
   bottom: 8rem;
   left: 4rem;
+}
+
+/* ==== Media Query ==== */
+@media (max-width: 550px) {
+  .hero h1 {
+    position: absolute;
+    top: 50%;
+  }
 }
