@@ -35,5 +35,4 @@ npm run dev
 
 ## Contact
 
-Kendrick Tan
-kendricksjtan@gmail.com
+Kendrick Tan - kendricksjtan@gmail.com
