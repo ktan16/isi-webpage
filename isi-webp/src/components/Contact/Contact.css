@@ -81,6 +81,7 @@ form textarea::placeholder {
   font-size: 0.9rem;
 }
 
+/* ==== Media Query ==== */
 @media (max-width: 870px) {
   .contact {
     flex-direction: column;
@@ -101,4 +102,7 @@ form textarea::placeholder {
   .contact-col span.value {
     margin-bottom: 1rem;
   }
+}
+
+@media (max-width: 414px) {
 }
