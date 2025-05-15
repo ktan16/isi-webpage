@@ -30,9 +30,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // useState for if screen is small enough for menu mode
+  // useState for setting mobile menu
   const [mobileMenu, setMobileMenu] = useState(false);
-  // Function to toggle between menu modes
+  // Function to hide/show menu
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
   };
@@ -53,6 +53,7 @@ const Navbar = () => {
       </Link>
 
       {/* ==== Navigation links to main sections ==== */}
+      {/* Hide/show the navbar  */}
       <ul className={`navbar-menu ${!mobileMenu ? "hide-mobile-menu" : ""}`}>
         <li>
           <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>

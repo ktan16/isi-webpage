@@ -132,7 +132,6 @@ nav {
     width: 2rem;
     cursor: pointer;
     position: relative;
-    /* z-index: 11; higher than navbar-menu's 9 and nav's 10 */
   }
 
   .hide-mobile-menu {
