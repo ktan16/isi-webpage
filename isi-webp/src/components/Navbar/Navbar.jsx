@@ -55,25 +55,35 @@ const Navbar = () => {
       {/* ==== Navigation links to main sections ==== */}
       <ul className={`navbar-menu ${!mobileMenu ? "hide-mobile-menu" : ""}`}>
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>
             Home
           </Link>
         </li>
 
         <li>
-          <Link to="about-us" smooth={true} duration={500}>
+          <Link to="about-us" smooth={true} duration={500} onClick={toggleMenu}>
             About
           </Link>
         </li>
 
         <li>
-          <Link to="img-gallery" smooth={true} duration={500}>
+          <Link
+            to="img-gallery"
+            smooth={true}
+            duration={500}
+            onClick={toggleMenu}
+          >
             Gallery
           </Link>
         </li>
 
         <li>
-          <Link to="contact-us" smooth={true} duration={500}>
+          <Link
+            to="contact-us"
+            smooth={true}
+            duration={500}
+            onClick={toggleMenu}
+          >
             Contact
           </Link>
         </li>
