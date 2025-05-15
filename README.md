@@ -1,16 +1,12 @@
-# isi-webpage
+# ISI Website
 
-1. npm create vite@latest -> React -> JS
-2. npm install - in project folder
-3. npm install react-scroll
+A responsive and modern website for International Synthetic Industries Inc., a rope manufacturing company based in Manila, Philippines.
 
-To run:
-npm run dev
+## 📌 Features
 
-To build:
-npm run build
-obtain "dist" folder -> assets & index.html
-
-To host:
-host on hostinger
-upload assets folder & index.html
+- Mobile-friendly design
+- Sticky navigation bar
+- About section with photos and descriptions
+- Product listings (ropes)
+- Contact form with validation
+- SEO and accessibility enhancements
