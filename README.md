@@ -26,6 +26,7 @@ npm run dev
 - React
 - Vite
 - Formspree (for contact form)
+- Netlify (for deployment)
 
 ## Usage
 
