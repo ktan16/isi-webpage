@@ -23,9 +23,9 @@ npm run dev
 
 ## Technologies Used
 
-React
-Vite
-Formspree (for contact form)
+- React
+- Vite
+- Formspree (for contact form)
 
 ## Usage
 
