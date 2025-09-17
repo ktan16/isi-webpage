@@ -47,7 +47,7 @@ const Contact = ({ title }) => {
         {/* ==== Contact form column ==== */}
         <div className="contact-col">
           {/* Form submits to Formspree API to handle backend for client messages */}
-          <form action="https://formspree.io/f/xgvkavkb" method="POST">
+          <form action="https://formspree.io/f/xpwjglbk" method="POST">
             <label>Name:</label>
             <input
               type="text"
