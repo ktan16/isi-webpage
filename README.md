@@ -1,6 +1,6 @@
 # ISI Website
 
-A responsive and modern website for International Synthetic Industries Inc., a rope manufacturing company based in Manila, Philippines.
+A responsive and modern website for International Synthetic Industries Inc., a synthetic rope manufacturing company based in Manila, Philippines.
 
 ## Features
 
